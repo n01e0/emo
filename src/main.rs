@@ -10,7 +10,7 @@ fn main() {
             (@arg font: -f --font +takes_value "select font")
             (@arg font_list: --font_list "font list")
             (@arg color: -c --color +takes_value "text color(RGBA)")
-            (@arg back_color: -b --bg +takes_value "background color(RGBA)")
+            (@arg back_color: -b --back_color +takes_value "background color(RGBA)")
             (@arg text: +required "emoji text")
             (@arg out: -o --outpath +takes_value "output path(default is $HOME/emoji)")
         ).get_matches();
