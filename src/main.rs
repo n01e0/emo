@@ -7,12 +7,12 @@ fn main() {
             (version:   crate_version!())
             (author:    crate_authors!())
             (about:     crate_description!())
-            (@arg font: -f --font "select font")
-            (@arg color: -c --color "text color(RGBA)")
-            (@arg back_color: -b --bg "background color(RGBA)")
-            (@arg text: +required "emoji text")
+            (@arg font: -f --font +takes_value "select font")
             (@arg font_list: --font_list "font list")
-            (@arg out: -o --outpath "output path(default is $HOME/emoji)")
+            (@arg color: -c --color +takes_value "text color(RGBA)")
+            (@arg back_color: -b --bg +takes_value "background color(RGBA)")
+            (@arg text: +required "emoji text")
+            (@arg out: -o --outpath +takes_value "output path(default is $HOME/emoji)")
         ).get_matches();
 
     if matches.is_present("font_list") {
