@@ -26,7 +26,7 @@ impl FromStr for Font {
         match s {
             "notosans-mono-bold"        | "NotoSansMonoBold"        => Ok(Self::NotoSansMonoBold),
             "mplus-1p-black"            | "Mplus1pBlack"            => Ok(Self::Mplus1pBlack),
-            "rouded-x-mplus-1p-black"   | "RoundedXMplus1pBlack"    => Ok(Self::RoundedXMplus1pBlack),
+            "rounded-x-mplus-1p-black"   | "RoundedXMplus1pBlack"    => Ok(Self::RoundedXMplus1pBlack),
             "ipamjm"                    | "IPAmjMinchou"            => Ok(Self::IPAmjMinchou),
             "aoyagireisyoshimo"         | "AoyagiReisyoShimo"       => Ok(Self::AoyagiReisyoShimo),
             "LinLibertine_RBah"         | "LinLibertineRBah"        => Ok(Self::LinLibertineRBah),
